@@ -110,8 +110,23 @@ footer{
         }
     }
 }
-
-@media  screen and (max-width : 480px) {
+@media  screen and (max-width : 1080px) {
+    header,section,footer{
+        width: 100%;
+    }
+    header{
+        p{
+            font-size: smaller;
+            span{
+                font-size: smaller;
+            }
+        }
+    }
+}
+@media  screen and (max-width : 720px) {
+    header,section,footer{
+        width: 100%;
+    }
     header{
         p{
             font-size: smaller;

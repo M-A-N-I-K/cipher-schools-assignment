@@ -35,9 +35,12 @@
     }
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 1080px) {
     .feed{
-        width: 100%;
+        width: calc(65vw - 20px);
+        .posts{
+            width: calc(65vw - 20px);
+        }
     }
     .posts-announcements{
         div:first-child{
@@ -48,11 +51,16 @@
         }
     }
 }
+
 @media screen and (max-width : 720px) {
     .feed{
-        width: 70vw;
+        width: 100vw;
+        .posts{
+            width: calc(100vw - 20px);
+        }
     }
     .posts-announcements{
+        width: calc(100vw - 20px);
         div:first-child{
             color: #f0625a;
             font-weight: 600;

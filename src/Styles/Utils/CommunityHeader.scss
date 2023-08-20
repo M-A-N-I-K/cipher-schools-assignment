@@ -49,12 +49,8 @@ p{
     color : rgb(181, 180, 180);
 }
 
-@media  screen and (max-width : 480px) {
+@media  screen and (max-width : 1080px) {
     .community{
-        .icon{
-            width: 36px;
-            height: 36px;
-        }
         .community-name{
             h1{
                 font-size: large;
@@ -62,11 +58,19 @@ p{
         }
     }
 }
+
 @media  screen and (max-width : 720px) {
-    .community{
-        .community-name{
-            h1{
-                font-size: large;
+    .feed-header{
+        width: calc(100vw - 28px);
+        .community{
+            .icon{
+                width: 36px;
+                height: 36px;
+            }
+            .community-name{
+                h1{
+                    font-size: medium;
+                }
             }
         }
     }

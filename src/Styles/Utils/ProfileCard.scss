@@ -59,15 +59,10 @@
     }
 }
 
-@media  screen and (max-width : 480px) {
-    .card{
-        display: none;
-    }
-}
-@media  screen and (max-width : 720px) {
+@media  screen and (max-width : 1080px) {
     .card{
         width: calc(30vw - 40px);
-        height: calc(25vh - 40px);
+        height: calc(20vh - 40px);
         span{
             transform: translateY(-35px);
         }
@@ -83,5 +78,11 @@
             font-size: medium;
             width: 70%;
         }
+    }
+}
+
+@media  screen and (max-width : 720px) {
+    .card{
+        display: none;
     }
 }

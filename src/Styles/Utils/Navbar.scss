@@ -39,9 +39,16 @@
         }
     }
 }
-@media  screen and (max-width : 480px) {
+
+@media  screen and (max-width : 1080px) {
     .navbar{
-        width: 90%;
+        width: calc(30vw - 20px);
+    }
+}
+
+@media  screen and (max-width : 720px) {
+    .navbar{
+        width: calc(85vw - 10px);
         height: 35px;
         padding: 5px 0;
         align-items: center;
@@ -82,11 +89,5 @@
                 }
             }
         }
-    }
-}
-
-@media  screen and (max-width : 720px) {
-    .navbar{
-        width: calc(30vw - 20px);
     }
 }
