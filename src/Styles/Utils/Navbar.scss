@@ -87,6 +87,6 @@
 
 @media  screen and (max-width : 720px) {
     .navbar{
-        width: 30vw;
+        width: calc(30vw - 20px);
     }
 }
