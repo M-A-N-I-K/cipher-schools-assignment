@@ -1,0 +1,55 @@
+@import url(https://db.onlinewebfonts.com/c/6395eabda4280eda7f204660115dd7ce?family=SkyWing+W00+Bold); 
+.header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6px;
+    align-items: center;
+    width: calc(100vw - 12px);
+    height : 8vh;
+    border-bottom : 1px solid rgb(194, 194, 194);
+    .logo{
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        font-family: "SkyWing W00 Bold",cursive;
+        font-size: large;
+        img{
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        svg{
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        svg:hover{
+            cursor: pointer;
+            transform: rotate(-15deg);
+        }
+        .profile-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            font-weight: bold;
+            height: 32px;
+            width: 32px;
+            margin-left: 4px;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .header{
+        h2{
+            display: none;
+        }
+        .profile{
+            display: none;
+        }
+    }
+}

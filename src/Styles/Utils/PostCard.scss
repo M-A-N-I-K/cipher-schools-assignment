@@ -1,0 +1,123 @@
+header{
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-between;
+    align-items: center;
+    .post-header{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 12px;
+        width: 50%;
+        .icon{
+            height: 42px;
+            width : 42px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color : rgb(228, 120, 120);
+        }
+        p{
+            color : black;
+            span{
+                color : #f0625a;
+                font-size: small;
+            }
+        }
+        h1{
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        .follow-btn{
+            padding: 10px 10px;
+            background: white;
+            border-style: none;
+            border-radius: 4px;
+            display: flex;
+            p{
+                padding-right : 4px;
+                span{
+                    color : #f0625a;
+                    font-weight: 800;
+                    padding-right: 4px;
+                }
+            }
+        }
+        .follow-btn:hover{
+            cursor: pointer;
+            background-color: rgb(231, 230, 230);
+        }
+    }
+}
+
+section{
+    text-align: start;
+    p{
+        color : black;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom : 1px solid rgb(194, 194, 194);;
+    .interactions{
+        display: flex;
+        column-gap: 15px;
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        svg{
+            cursor: pointer;
+        }
+    }
+    .like-icons{
+        display: flex;
+        color: white;
+        font-size: smaller;
+        padding-right: 12px;
+        .icon{
+            cursor: pointer;
+            height: 22px;
+            width : 22px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color : rgb(228, 120, 120);
+            box-shadow: 2px 2px 2px 2px #e7e7e7;
+        }
+        .icon:nth-child(2){
+            background-color: rgb(57, 57, 197);
+        }
+        .icon:nth-child(3){
+            background-color: white;
+            color :rgb(228, 120, 120);
+        }
+    }
+}
+
+@media  screen and (max-width : 480px) {
+    header{
+        p{
+            font-size: smaller;
+            span{
+                font-size: smaller;
+            }
+        }
+    }
+}

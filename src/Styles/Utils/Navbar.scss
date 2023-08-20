@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 40px 0;
+    width: calc(25vw);
+    height: calc(30vh - 20px);
+    border-radius: 8px;
+    border : 1px solid rgb(194, 194, 194);
+    box-shadow: 2px 2px 2px 2px #e7e7e7;
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        list-style-type: none;
+        .list-item{
+            width: 100%;
+            font-size: larger;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            div{
+                padding-left: 12px;
+            }
+            svg{
+                width: 32px;
+                height: 32px;
+            }
+            div:hover{
+                color: #f0625a;
+                cursor: pointer;
+            }
+        }
+        .list-item:last-child{
+            display: none;
+        }
+    }
+}
+@media  screen and (max-width : 480px) {
+    .navbar{
+        width: 90%;
+        height: 35px;
+        padding: 5px 0;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        .nav-list{
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .list-item{
+                cursor: pointer;
+                justify-content: center;
+                flex-direction: column;
+                svg{
+                    width: 24px;
+                    height: 24px;
+                }
+                div{
+                    padding-left: 0;
+                    font-size: 12px;
+                }
+            }
+            .list-item:nth-child(2){
+                color : #f0625a;
+            }
+            .list-item:last-child{
+                display: block;
+                .profile-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: yellow;
+                    font-weight: bold;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width : 720px) {
+    .navbar{
+        width: 30vw;
+    }
+}

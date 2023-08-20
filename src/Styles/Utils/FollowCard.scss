@@ -1,0 +1,56 @@
+.follow-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .user-info{
+        display: flex;
+        column-gap: 10px;
+    }
+    .logo{
+        cursor: pointer;
+        background: aliceblue;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+    }
+    .username{
+        cursor: pointer;
+        font-size: medium;
+        p:first-child{
+            font-size: x-small;
+        }
+        p:last-child{
+            font-weight: 600;
+        }
+    }
+    .follow-btn{
+        padding: 10px 20px;
+        background: white;
+        border-style: none;
+        border-radius: 4px;
+        display: flex;
+        span{
+            color : #f0625a;
+            font-weight: 800;
+            padding-right: 2px;
+        }
+    }
+    .follow-btn:hover{
+        cursor: pointer;
+        background-color: rgb(231, 230, 230);
+    }
+}
+@media  screen and (max-width : 720px) {
+    .follow-card{
+        .username{
+            p:last-child{
+                font-size: medium;
+            }
+        }
+        .follow-btn{
+            padding: 5px 10px;
+            font-size: small;
+        }
+    }
+}

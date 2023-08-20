@@ -1,0 +1,27 @@
+.left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 60px;
+    padding: 20px;
+    height: calc(90vh - 40px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.left-section::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    .left-section{
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+        height: 40px;
+        width: calc(100% - 40px);
+        flex-direction: row;
+        bottom: 0;
+        overflow: hidden;
+    }
+}

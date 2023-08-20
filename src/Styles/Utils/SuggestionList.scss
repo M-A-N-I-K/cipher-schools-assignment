@@ -1,0 +1,23 @@
+.suggestion-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: calc(25vw - 40px);
+    border : 1px solid rgb(194, 194, 194);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #e7e7e7;
+}
+
+@media  screen and (max-width : 480px) {
+    .suggestion-list{
+        display: none;
+    }
+}
+@media  screen and (max-width : 720px) {
+    .suggestion-list{
+        width: calc(30vw - 40px);
+        row-gap: 4px;
+    }
+}
